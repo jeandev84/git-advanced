@@ -1,0 +1,11 @@
+# GIT CHECKOUT
+
+Ours commit
+929ac73 - Index files : 2019-10-27 | Yao Jean-Claude
+9bf2ede - Git status testing : 2019-10-27 | Yao Jean-Claude
+28ee0f5 - Initialize our project : 2019-10-27 | Yao Jean-Claude
+
+Exemple: Return to commit
+$ git checkout 9bf2ede
+
+$ git checkout master

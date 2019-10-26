@@ -1,0 +1,49 @@
+# GIT LOG (History Commit)
+
+$ git log
+$ ctrl Z
+$ q (quit log)
+
+# SHOW COMMIT IN ONE LINE
+
+$ git log --pretty=oneline
+
+# SHOW LOG COMMIT AND MAXIMUM COUNT TO SHOW
+(this 'll show last 3 commits)
+$ git log --pretty=oneline --max-count=3
+
+
+# SHOW ALL COMMIT
+$ git log --pretty=oneline --all
+
+
+# SHOW ALL COOMIT BY AUTHOR
+$ git log --pretty=oneline --author="Jean Claude"
+
+
+# SHOW COOMIT WITH OUR FORMAT WE NEED
+$ git log --pretty=format:"%h - %s : %ad | %an"
+
+- h%  : hash
+- %s  : comments
+- %ad : date
+- %an : author (user)
+
+Ex:
+929ac73 - Index files : Sun Oct 27 00:22:06 2019 +0300 | Yao Jean-Claude
+9bf2ede - Git status testing : Sun Oct 27 00:16:01 2019 +0300 | Yao Jean-Claude
+28ee0f5 - Initialize our project : Sun Oct 27 00:10:32 2019 +0300 | Yao Jean-Claude
+
+
+# SHOW COOMIT WITH OUR FORMAT WE NEED WITH good format date
+$ git log --pretty=format:"%h - %s : %ad | %an" --date=short
+
+--date=short (give us good format date)
+
+929ac73 - Index files : 2019-10-27 | Yao Jean-Claude
+9bf2ede - Git status testing : 2019-10-27 | Yao Jean-Claude
+28ee0f5 - Initialize our project : 2019-10-27 | Yao Jean-Claude
+
+
+
+

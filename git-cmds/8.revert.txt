@@ -1,0 +1,14 @@
+# GIT REVERT
+$ git revert
+
+----------------------------
+$ nano test.txt
+$ git status
+$ git add test.txt
+$ git commit -m "modify file test.txt"
+
+
+# REVERT COMMIT
+$ git revert HEAD
+
+
