@@ -1,0 +1,10 @@
+# Индексация файла
+
+$ git add * (add all indexes files [commit canditates] by git)
+$ git add . (add all files from root directory project)
+
+$ git add nameOfFile.txt
+$ git commit -m "Add new file"
+
+
+
