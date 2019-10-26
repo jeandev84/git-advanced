@@ -1,0 +1,34 @@
+# REPOSITORY
+echo "# git-advanced" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:jeandev84/git-advanced.git
+git push -u origin master
+
+# GIT CLONE
+(клонирует проект с нашего удаленного репозитории)
+Example:
+$ git clone git@github.com:jeandev84/git-advanced.git
+$ git clone https://github.com/devcolibri/es6-project.git
+
+$ git status
+$ git log
+
+(master) $ ls
+
+# Загрузить наш проект на удаленную репозиторию
+
+echo "# git-advanced" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:jeandev84/git-advanced.git
+git push -u origin master
+
+# Для существующего проекта нам достаточно выполнить след. команду
+git remote add origin git@github.com:jeandev84/git-advanced.git
+git push -u origin master
+
+
+

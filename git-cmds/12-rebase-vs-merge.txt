@@ -1,0 +1,73 @@
+# GIT REBASE VS MERGE
+
+$ git branch -a
+
+$ git checkout master
+
+$ git checkout develop
+$ ls
+$ nano File.php
+
+$ git add .
+$ git commit --
+(develop) $ git checkout master
+
+(master) $ git rebase develop
+First, rewinding head to replay your work on top of it ....
+Fast-forwarded master to dev.
+
+$ git log
+
+# GIT REBASE похож на GIT MERGE
+
+(master) $ ls
+devfile.txt index.html test.txt
+
+(master) $ nano index.html (редактирование файла в master)
+
+(master) $ git add index.html
+(master) $ git commit -m "Commit - 1"
+
+(master)  $ git checkout develop
+(develop) $ ls
+ devfile.txt index.htmk test.txt
+
+(develop) $ nano test.txt
+(develop) $ git status
+(develop) $ git add .
+(develop) $ git commit -m "Commit - 2"
+
+
+(develop) $ git checkout master
+(master)  $ ls
+devfile.txt index.html test.txt
+
+(master) $ nano devfile.txt
+(master)  $ git status
+  modified devfile.txt
+
+(master)  $ git add .
+(master)  $ git commit -m "Commit - 3"
+
+(master)  $ git log
+
+(master) $ git checkout develop
+(develop) $ ls
+index.html test.txt
+(develop) $ git status
+(develop) $ git add .
+(develop) $ git commit -m "Commit - 4"
+(develop) $ git log
+
+(develop) $ git checkout master
+(master)  $ git log
+(master)  $ git rebase develop
+First, rewinding head to replay your work on top of it ..
+Appliying: Commit - 1
+Appliying: Commit - 3
+
+(master)  $ git log
+
+(master) $ git merge develop
+
+

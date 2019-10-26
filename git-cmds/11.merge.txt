@@ -1,0 +1,78 @@
+# GIT MERGE
+(Объяденение веток)
+
+$ git checkout develop
+$ nano newfile.txt
+$ git add newfile.txt
+$ git status
+$ git commit -m "add new file in develop"
+$ ls (to see all files)
+(Мы переключили на ветку master)
+$ git checkout master
+$ ls
+
+# MERGE
+(цказыкаем имя ветки которая мы хотим слевать изменения)
+объяденение веток
+$ git merge develop
+
+(выполним след. команд чтобы видеть что они корреткно смержили)
+$ git log
+
+$ git status
+
+# переключить к другой веткой
+$ git checkout develop
+
+$ git checkout master
+(если не возможно выполнить эту команду, то добавить новые изменения)
+
+$ git add devfile.txt
+$ git commit -m "Add dev file"
+
+$ git checkout master
+$ git add .
+$ git commit -m "Added new line in file dev"
+
+$ git status
+$ git checkout master
+
+(master) $ git merge develop
+Auto-merging devfile.txt
+CONFLICT (content): Merge conflict in devfile.txt
+Automatic merge failed; fix conflicts and then commit the result
+
+RESOLVE CONFLICT
+$ git status
+
+$ nano devfile.txt
+<<<<<HEAD (for master branch)
+Hello world (на мастер хочу увидеть Hello world)
+======= (for develop branch)
+Hello World (на develop хочу убрать эту строчку)
+Hello first change
+>>>>develop
+
+==================
+
+вот так мы хотим видеть наш файл
+Hello World
+Hello first change
+
+# после чего мы выполним
+$ git status
+
+$ git add .
+$ git commit
+
+так как у нас были конфликты не нужно писать комментарии
+поэтому берем комментарии по умолчанию
+(Merge branch 'develop')
+
+shift:wq (записать и выйти write and quit)
+
+$ git status
+On branch master.
+nothing to commit, working tree clean
+
+$ git log

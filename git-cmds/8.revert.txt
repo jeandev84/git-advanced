@@ -10,5 +10,12 @@ $ git commit -m "modify file test.txt"
 
 # REVERT COMMIT
 $ git revert HEAD
+$ git revert HEAD --no-edit
+$ git log
+
+$ git revert 98efgwe345 --no-edit
+
+
+
 
 

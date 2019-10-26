@@ -1,0 +1,33 @@
+# GIT BRANCH
+
+$ git branch (show all availables branchs)
+
+# CREATE NEW BRANCH
+
+$ git ckeckout -b newbranch (create and connect to branch)
+$ git checkout -b dev
+$ git checkout -b develop
+
+create 3 branchs in current branch
+for example current branch is develop,
+
+$ git checkout -b f1
+$ git checkout -b f2
+$ git checkout -b f3
+
+
+# CHECKOUT BRANCH
+(переключение между ветками)
+$ git checkout имя_ветка
+
+$ git checkout develop
+
+$ git status
+$ git add .
+$ git commit -m "Add new commit"
+$ git log
+
+$ git checkout master
+$ git log
+
+

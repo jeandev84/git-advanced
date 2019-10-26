@@ -1,0 +1,11 @@
+# RESOLVE CONFLICT
+
+$ git revert
+
+$ git status
+$ git add index.html
+
+$ git revert --continue
+$ git log
+
+
