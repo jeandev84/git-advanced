@@ -1,0 +1,17 @@
+# ADD, COMMIT
+$ nano test.txt (create file and redaction it)
+
+$ git add test.txt
+
+$ gitk (git key)
+
+$ git commit
+GNU
+ Write here your commit ...
+
+$ git commit -m "My first commit"
+
+
+
+
+

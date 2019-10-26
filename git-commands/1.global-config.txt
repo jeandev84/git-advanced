@@ -1,0 +1,20 @@
+# No Global configuration git
+(this configuration permit others developers to see user information)
+
+$ git config user.name  "TestName"
+$ git config user.email "test@ymail.com"
+
+
+# Global configuration git
+(this configuration permit others developers to see user information)
+
+$ git config --global user.name  "Jean-Claude"
+$ git config --global user.email "jeanyao@ymail.com"
+
+
+# Initialize project
+$ git init
+
+
+
+
