@@ -1,4 +1,4 @@
-# ADD, COMMIT
+# GIT ADD, COMMIT
 $ nano test.txt (create file and redaction it)
 
 $ git add test.txt
