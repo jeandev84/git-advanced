@@ -66,3 +66,27 @@ $ git fetch (прочитать по данную команду)
 $ git pull --rebase origin master
 
 
+# Склонировать нашей удаленной репозитории
+$ git clone /path/to/repository/.git
+
+# Смотрим на какой удаленной репозитории настроен наш локальный
+$ git remote show origin
+
+# Посмотреть наших изменений
+$ git diff
+
+# Создание новую ветку
+$ git branch multiple_cards
+
+$ git branch
+* master
+multiple_cards
+
+$ git checkout multiple_cards
+(multiple_cards)
+
+$ git branch
+master
+* multiple_cards
+$ git commit -m "Multiple cards"
+
