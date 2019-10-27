@@ -1,0 +1,68 @@
+# GIT STASH
+
+(master) $ git stash
+
+(master) $ ls
+(master) $ nano test.txt
+(master) $ git status
+
+(master) $ git pull or git pull --rebase origin master
+(master) $ git pull origin master
+(master) $ git add .
+(master) $ nano README.txt
+
+------------------------------
+(Отложить все что мы сделали на локальном репозитории на корзину)
+(master) $ git stash
+(master) $ git status
+ не будет изменения
+
+(master) $ git pull --rebase origin master
+
+(вернем к нашему репозитории)
+(master) $ git stash pop
+  devfile.txt
+
+(master) $ git log
+
+(посмотреть нашу корзину)
+(master) git stash list
+
+(master) git stash
+(master) git status
+(master) nano README.txt
+
+# показывать все изменения на карзине
+(master) git stash list
+
+# показывать последния изменения в корзине
+ (master) git stash show
+
+# применить последние изменение в нашем файле README.txt
+ (master) git stash apply
+
+# удаление последние добавление stash (корзина)
+ (master) git stash drop
+ (master) git stash list
+ (master) git stash pop (stash apply + drop)
+
+# очишать нашу корзину
+ (master) git stash clear
+
+
+# ORIGIN что такое ?
+осмотреть на каком удаленном сервере работаем
+
+(master) git remote
+origin
+
+- origin: это имя сервера который git дает для удаленной репозитории
+
+(master) git remote -v
+
+$ git fetch (прочитать по данную команду)
+
+(потягивать все изменения имя нашего сервера на репозитории какую то ветку)
+$ git pull --rebase origin master
+
+

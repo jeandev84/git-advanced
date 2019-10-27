@@ -1,0 +1,15 @@
+# GIT PULL
+(Собрать или Вытянуть все измения из других разработчиков например и сохранить на свой локальной машине)
+
+(develop) $ git pull
+
+(Мы собираем все изменения с develop на свой локальной машине
+(develop) $ git pull origin develop
+
+(develop) $ git checkout master
+(master)  $ git pull origin master
+
+# по умолчанию , Обычно pull работает как обычно merge или rebase
+
+$ git pull --rebase origin master
+

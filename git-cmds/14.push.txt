@@ -1,3 +1,18 @@
 # GIT PUSH
 
-$ git push
+(master)$ git status
+(master)$ git add .
+(master)$ git commit -m "Add new Class"
+(master)$ git push
+
+(master) git push
+(master) git push --set-upstream origin master
+(develop) git push --set-upstream origin develop
+
+(
+- origin : это наши локальные изменения
+- master : это ветка по умолчанию на удалению репозитории
+)
+(develop) git push origin develop
+
+(master) git push origin master
