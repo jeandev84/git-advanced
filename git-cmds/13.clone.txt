@@ -23,12 +23,33 @@ echo "# git-advanced" >> README.md
 git init
 git add README.md
 git commit -m "first commit"
-git remote add origin git@github.com:jeandev84/git-advanced.git
+git remote add origin https://github.com/jeandev84/git-advanced.git
 git push -u origin master
 
+
 # Для существующего проекта нам достаточно выполнить след. команду
-git remote add origin git@github.com:jeandev84/git-advanced.git
+git remote add origin https://github.com/jeandev84/git-advanced.git
 git push -u origin master
+
+
+# SET URL
+- ADD
+git remote set-url origin --add https://github.com/jeandev84/git-advanced.git
+
+- DELETE
+git remote set-url origin --delete git@github.com:jeandev84/git-advanced.git
+
+
+# HELP GITHUB
+https://help.github.com/en/github/using-git/changing-a-remotes-url#switching-remote-urls-from-ssh-to-https
+
+
+# ADD NEW USER FOR DEVELOPMENT
+https://github.com/jeandev84/git-advanced/settings/collaboration
+
+Добавить пользователь по имени его аккаунт
+потом пользователь должен подтвердить ссылку на добавление на проект
+
 
 
 
