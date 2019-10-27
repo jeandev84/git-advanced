@@ -1,0 +1,739 @@
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git --version
+git version 2.20.1
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git init
+Инициализирован пустой репозиторий Git в /var/www/git-advanced/.git/
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ nano test.txt
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ gitk
+
+Команда «gitk» не найдена, но может быть установлена с помощью:
+
+sudo apt install gitk
+
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ sudo apt install gitk
+[sudo] пароль для jeandev:
+Чтение списков пакетов… Готово
+Построение дерева зависимостей
+Чтение информации о состоянии… Готово
+Будут установлены следующие дополнительные пакеты:
+  libtcl8.6 libtk8.6 tcl tcl8.6 tk tk8.6
+Предлагаемые пакеты:
+  git-doc tcl-tclreadline
+Следующие НОВЫЕ пакеты будут установлены:
+  gitk libtcl8.6 libtk8.6 tcl tcl8.6 tk tk8.6
+Обновлено 0 пакетов, установлено 7 новых пакетов, для удаления отмечено 0 пакетов, и 14 пакетов не обновлено.
+Необходимо скачать 1 778 kB архивов.
+После данной операции объём занятого дискового пространства возрастёт на 8 172 kB.
+Хотите продолжить? [Д/н] y
+Пол:1 http://ru.archive.ubuntu.com/ubuntu disco/main amd64 libtcl8.6 amd64 8.6.9+dfsg-2 [898 kB]
+Пол:2 http://ru.archive.ubuntu.com/ubuntu disco/main amd64 libtk8.6 amd64 8.6.9-2 [708 kB]
+Пол:3 http://ru.archive.ubuntu.com/ubuntu disco/universe amd64 tk8.6 amd64 8.6.9-2 [12,3 kB]
+Пол:4 http://ru.archive.ubuntu.com/ubuntu disco/main amd64 tcl8.6 amd64 8.6.9+dfsg-2 [14,4 kB]
+Пол:5 http://ru.archive.ubuntu.com/ubuntu disco/universe amd64 tcl amd64 8.6.9+1 [5 112 B]
+Пол:6 http://ru.archive.ubuntu.com/ubuntu disco/universe amd64 tk amd64 8.6.9+1 [3 240 B]
+Пол:7 http://ru.archive.ubuntu.com/ubuntu disco/universe amd64 gitk all 1:2.20.1-2ubuntu1 [137 kB]
+Получено 1 778 kB за 3с (538 kB/s)
+debconf: не удалось инициализировать интерфейс: Dialog
+debconf: (Для интерфейса dialog требуется экран не менее 13 строк в высоту и 31 колонки в ширину.)
+debconf: будет использован интерфейс: Readline
+Выбор ранее не выбранного пакета libtcl8.6:amd64.
+(Чтение базы данных … на данный момент установлено 188979 файлов и каталогов.)
+Подготовка к распаковке …/0-libtcl8.6_8.6.9+dfsg-2_amd64.deb …
+
+Ход выполнения: [  0%] [.......................................................................................................]
+Распаковывается libtcl8.6:amd64 (8.6.9+dfsg-2) …...............................................................................]
+
+Выбор ранее не выбранного пакета libtk8.6:amd64................................................................................]
+Подготовка к распаковке …/1-libtk8.6_8.6.9-2_amd64.deb …
+
+Распаковывается libtk8.6:amd64 (8.6.9-2) ….....................................................................................]
+
+Выбор ранее не выбранного пакета tk8.6.........................................................................................]
+Подготовка к распаковке …/2-tk8.6_8.6.9-2_amd64.deb …
+
+Распаковывается tk8.6 (8.6.9-2) …########......................................................................................]
+
+Выбор ранее не выбранного пакета tcl8.6.#####..................................................................................]
+Подготовка к распаковке …/3-tcl8.6_8.6.9+dfsg-2_amd64.deb …
+
+Распаковывается tcl8.6 (8.6.9+dfsg-2) …#########...............................................................................]
+
+Выбор ранее не выбранного пакета tcl.###############...........................................................................]
+Подготовка к распаковке …/4-tcl_8.6.9+1_amd64.deb …
+
+Распаковывается tcl (8.6.9+1) …########################........................................................................]
+
+Выбор ранее не выбранного пакета tk.#######################....................................................................]
+Подготовка к распаковке …/5-tk_8.6.9+1_amd64.deb …
+
+Распаковывается tk (8.6.9+1) …#################################................................................................]
+
+Выбор ранее не выбранного пакета gitk.############################.............................................................]
+Подготовка к распаковке …/6-gitk_1%3a2.20.1-2ubuntu1_all.deb …
+
+Распаковывается gitk (1:2.20.1-2ubuntu1) …############################.........................................................]
+
+Настраивается пакет libtcl8.6:amd64 (8.6.9+dfsg-2) …#####################......................................................]
+
+Ход выполнения: [ 52%] [#####################################################..................................................]
+Настраивается пакет tcl8.6 (8.6.9+dfsg-2) …#####################################...............................................]
+
+Ход выполнения: [ 59%] [############################################################...........................................]
+Настраивается пакет libtk8.6:amd64 (8.6.9-2) …#########################################........................................]
+
+Ход выполнения: [ 66%] [###################################################################....................................]
+Настраивается пакет tcl (8.6.9+1) …############################################################................................]
+
+Ход выполнения: [ 72%] [##########################################################################.............................]
+Настраивается пакет tk8.6 (8.6.9-2) …#################################################################.........................]
+
+Ход выполнения: [ 79%] [#################################################################################......................]
+Настраивается пакет tk (8.6.9+1) …###########################################################################..................]
+
+Ход выполнения: [ 86%] [########################################################################################...............]
+Настраивается пакет gitk (1:2.20.1-2ubuntu1) …######################################################################...........]
+
+Ход выполнения: [ 93%] [###############################################################################################........]
+Обрабатываются триггеры для man-db (2.8.5-2) …#############################################################################....]
+Обрабатываются триггеры для libc-bin (2.29-0ubuntu2) …
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git commit
+Отмена коммита из-за пустого сообщения коммита.
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git add .
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git commit -m "Initialize our project"
+[master (корневой коммит) 28ee0f5] Initialize our project
+ 16 files changed, 470 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 app/Entity/BaseEntity.php
+ create mode 100644 app/Entity/Person.php
+ create mode 100644 app/Entity/Post.php
+ create mode 100644 app/Repository/PostRepository.php
+ create mode 100644 composer.json
+ create mode 100644 git-commands/1.global-config.txt
+ create mode 100644 git-commands/2.commit.txt
+ create mode 100644 helpers/functions.php
+ create mode 100644 index.php
+ create mode 100644 resources/assets/css/app.css
+ create mode 100644 resources/views/posts/index.php
+ create mode 100644 src/ArrayCollection.php
+ create mode 100644 src/Exceptions/InvalidItem.php
+ create mode 100644 src/FileSytem.php
+ create mode 100644 test.txt
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git status
+На ветке master
+Изменения, которые будут включены в коммит:
+  (используйте «git reset HEAD <файл>…», чтобы убрать из индекса)
+
+        переименовано: git-commands/1.global-config.txt -> git-cmds/1.global-config.txt
+        переименовано: git-commands/2.commit.txt -> git-cmds/2.commit.txt
+        новый файл:    git-cmds/3.status.txt
+        новый файл:    git-cmds/console.txt
+
+Изменения, которые не в индексе для коммита:
+  (используйте «git add <файл>…», чтобы добавить файл в индекс)
+  (используйте «git checkout -- <файл>…», чтобы отменить изменения
+   в рабочем каталоге)
+
+        изменено:      git-cmds/2.commit.txt
+        изменено:      git-cmds/3.status.txt
+
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git add .
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git status
+На ветке master
+Изменения, которые будут включены в коммит:
+  (используйте «git reset HEAD <файл>…», чтобы убрать из индекса)
+
+        переименовано: git-commands/1.global-config.txt -> git-cmds/1.global-config.txt
+        переименовано: git-commands/2.commit.txt -> git-cmds/2.commit.txt
+        новый файл:    git-cmds/3.status.txt
+        новый файл:    git-cmds/console.txt
+
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git commit -m "Git status testing"
+[master 9bf2ede] Git status testing
+ 4 files changed, 4 insertions(+), 1 deletion(-)
+ rename git-commands/1.global-config.txt => git-cmds/1.config.txt (100%)
+ rename {git-commands => git-cmds}/2.commit.txt (90%)
+ create mode 100644 git-cmds/3.status.txt
+ create mode 100644 git-cmds/console.txt
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git status
+На ветке master
+нечего коммитить, нет изменений в рабочем каталоге
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git dd .
+git: «dd» не является командой git. Смотрите «git --help».
+
+Самые похожие команды:
+        add
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git add .
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git status
+На ветке master
+Изменения, которые будут включены в коммит:
+  (используйте «git reset HEAD <файл>…», чтобы убрать из индекса)
+
+        новый файл:    git-cmds/4.add-file.txt
+
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git commit -m "Index files"
+[master 929ac73] Index files
+ 1 file changed, 10 insertions(+)
+ create mode 100644 git-cmds/4.add-file.txt
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git log
+commit 929ac73aec87535b1ee139c395faf5a92da8e73b (HEAD -> master)
+Author: Yao Jean-Claude <jeandev84@yahoo.com>
+Date:   Sun Oct 27 00:22:06 2019 +0300
+
+
+[1]+  Остановлен    git log
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git log --pretty=oneline
+929ac73aec87535b1ee139c395faf5a92da8e73b (HEAD -> master) Index files
+9bf2edee79f8215b237bec86c0b32eee334fdaf5 Git status testing
+28ee0f5005a0c42cd4bf1478b9352d0472cd8620 Initialize our project
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git log --pretty=format:"%h - %s : %ad | %an"
+929ac73 - Index files : Sun Oct 27 00:22:06 2019 +0300 | Yao Jean-Claude
+9bf2ede - Git status testing : Sun Oct 27 00:16:01 2019 +0300 | Yao Jean-Claude
+28ee0f5 - Initialize our project : Sun Oct 27 00:10:32 2019 +0300 | Yao Jean-Claude
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git log --pretty=format:"%h - %s : %ad | %an" --date=short
+929ac73 - Index files : 2019-10-27 | Yao Jean-Claude
+9bf2ede - Git status testing : 2019-10-27 | Yao Jean-Claude
+28ee0f5 - Initialize our project : 2019-10-27 | Yao Jean-Claude
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git checkout 9bf2ede
+A       git-cmds/5.log.txt
+A       git-cmds/6.checkout.txt
+Примечание: переход на «9bf2ede».
+
+Вы сейчас в состоянии «отделённого HEAD». Вы можете осмотреться, сделать
+экспериментальные изменения и закоммитить их, также вы можете отменить
+изменения любых коммитов в этом состоянии не затрагивая любые ветки и
+не переходя на них.
+
+Если вы хотите создать новую ветку и сохранить свои коммиты, то вы
+можете сделать это (сейчас или позже) вызвав команду checkout снова,
+но с параметром -b. Например:
+
+  git checkout -b <имя-новой-ветки>
+
+HEAD сейчас на 9bf2ede Git status testing
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ gitk
+^C
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git log --pretty=format:"%h - %s : %ad | %an" --date=short
+9bf2ede - Git status testing : 2019-10-27 | Yao Jean-Claude
+28ee0f5 - Initialize our project : 2019-10-27 | Yao Jean-Claude
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git checkout 9bf2ede
+A       git-cmds/5.log.txt
+A       git-cmds/6.checkout.txt
+HEAD сейчас на 9bf2ede Git status testing
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git checkout master
+A       git-cmds/5.log.txt
+A       git-cmds/6.checkout.txt
+Предыдущая позиция HEAD была 9bf2ede Git status testing
+Переключено на ветку «master»
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ ls
+app  composer.json  git-cmds  helpers  index.php  resources  src  test.txt  vendor
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ nano test.txt
+Используйте «fg» для возврата в nano
+
+[2]+  Остановлен    nano test.txt
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git status
+На ветке master
+Изменения, которые будут включены в коммит:
+  (используйте «git reset HEAD <файл>…», чтобы убрать из индекса)
+
+        новый файл:    git-cmds/5.log.txt
+        новый файл:    git-cmds/6.checkout.txt
+        новый файл:    git-cmds/7.cancel-index-files.txt
+
+Изменения, которые не в индексе для коммита:
+  (используйте «git add <файл>…», чтобы добавить файл в индекс)
+  (используйте «git checkout -- <файл>…», чтобы отменить изменения
+   в рабочем каталоге)
+
+        изменено:      git-cmds/5.log.txt
+        изменено:      git-cmds/6.checkout.txt
+
+Неотслеживаемые файлы:
+  (используйте «git add <файл>…», чтобы добавить в то, что будет включено в коммит)
+
+        .test.txt.swp
+
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git status
+На ветке master
+Изменения, которые будут включены в коммит:
+  (используйте «git reset HEAD <файл>…», чтобы убрать из индекса)
+
+        новый файл:    git-cmds/5.log.txt
+        новый файл:    git-cmds/6.checkout.txt
+        новый файл:    git-cmds/7.cancel-index-files.txt
+
+Изменения, которые не в индексе для коммита:
+  (используйте «git add <файл>…», чтобы добавить файл в индекс)
+  (используйте «git checkout -- <файл>…», чтобы отменить изменения
+   в рабочем каталоге)
+
+        изменено:      git-cmds/5.log.txt
+        изменено:      git-cmds/6.checkout.txt
+
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git add test.txt
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git status
+На ветке master
+Изменения, которые будут включены в коммит:
+  (используйте «git reset HEAD <файл>…», чтобы убрать из индекса)
+
+        новый файл:    git-cmds/5.log.txt
+        новый файл:    git-cmds/6.checkout.txt
+        новый файл:    git-cmds/7.cancel-index-files.txt
+
+Изменения, которые не в индексе для коммита:
+  (используйте «git add <файл>…», чтобы добавить файл в индекс)
+  (используйте «git checkout -- <файл>…», чтобы отменить изменения
+   в рабочем каталоге)
+
+        изменено:      git-cmds/5.log.txt
+        изменено:      git-cmds/6.checkout.txt
+
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git add .
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git status
+На ветке master
+Изменения, которые будут включены в коммит:
+  (используйте «git reset HEAD <файл>…», чтобы убрать из индекса)
+
+        новый файл:    git-cmds/5.log.txt
+        новый файл:    git-cmds/6.checkout.txt
+        новый файл:    git-cmds/7.cancel-index-files.txt
+
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git checkout test.txt
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git revert HEAD test.txt
+fatal: bad revision 'test.txt'
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git revert HEAD
+error: ваши локальные изменения будут перезаписаны обратить изменения.
+подсказка: для продолжения закоммитьте ваши изменения или спрячьте их.
+fatal: сбой обращения изменений коммита
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git status
+На ветке master
+Изменения, которые будут включены в коммит:
+  (используйте «git reset HEAD <файл>…», чтобы убрать из индекса)
+
+        новый файл:    git-cmds/5.log.txt
+        новый файл:    git-cmds/6.checkout.txt
+        новый файл:    git-cmds/7.reset.txt
+        новый файл:    git-cmds/8.revert.txt
+
+Изменения, которые не в индексе для коммита:
+  (используйте «git add <файл>…», чтобы добавить файл в индекс)
+  (используйте «git checkout -- <файл>…», чтобы отменить изменения
+   в рабочем каталоге)
+
+        изменено:      git-cmds/7.reset.txt
+        изменено:      git-cmds/8.revert.txt
+
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git add .
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git commit -m "Revert Wrong commit"
+[master 4a493ce] Revert Wrong commit
+ 4 files changed, 108 insertions(+)
+ create mode 100644 git-cmds/5.log.txt
+ create mode 100644 git-cmds/6.checkout.txt
+ create mode 100644 git-cmds/7.reset.txt
+ create mode 100644 git-cmds/8.revert.txt
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git status
+На ветке master
+Изменения, которые будут включены в коммит:
+  (используйте «git reset HEAD <файл>…», чтобы убрать из индекса)
+
+        новый файл:    git-cmds/9.resolve-conflict.txt
+
+Изменения, которые не в индексе для коммита:
+  (используйте «git add <файл>…», чтобы добавить файл в индекс)
+  (используйте «git checkout -- <файл>…», чтобы отменить изменения
+   в рабочем каталоге)
+
+        изменено:      git-cmds/8.revert.txt
+        изменено:      git-cmds/9.resolve-conflict.txt
+
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git add .
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git revert --continue
+error: копирование или обращение изменений коммита уже выполняются
+fatal: сбой обращения изменений коммита
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git status
+На ветке master
+Изменения, которые будут включены в коммит:
+  (используйте «git reset HEAD <файл>…», чтобы убрать из индекса)
+
+        изменено:      git-cmds/8.revert.txt
+        новый файл:    git-cmds/9.resolve-conflict.txt
+
+Изменения, которые не в индексе для коммита:
+  (используйте «git add <файл>…», чтобы добавить файл в индекс)
+  (используйте «git checkout -- <файл>…», чтобы отменить изменения
+   в рабочем каталоге)
+
+        изменено:      git-cmds/9.resolve-conflict.txt
+
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git add .
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git status
+На ветке master
+Изменения, которые будут включены в коммит:
+  (используйте «git reset HEAD <файл>…», чтобы убрать из индекса)
+
+        изменено:      git-cmds/8.revert.txt
+        новый файл:    git-cmds/9.resolve-conflict.txt
+
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git branch
+* master
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git chekout -b newbranch
+git: «chekout» не является командой git. Смотрите «git --help».
+
+Самые похожие команды:
+        checkout
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git branch
+* master
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git checkout -b newbranch
+A       git-cmds/10.branch.txt
+M       git-cmds/8.revert.txt
+A       git-cmds/9.resolve-conflict.txt
+Переключено на новую ветку «newbranch»
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git branch
+  master
+* newbranch
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git checkout -b develop
+A       git-cmds/10.branch.txt
+M       git-cmds/8.revert.txt
+A       git-cmds/9.resolve-conflict.txt
+Переключено на новую ветку «develop»
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git branch
+* develop
+  master
+  newbranch
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git checkout -b f1
+A       git-cmds/10.branch.txt
+M       git-cmds/8.revert.txt
+A       git-cmds/9.resolve-conflict.txt
+Переключено на новую ветку «f1»
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git checkout -b f2
+A       git-cmds/10.branch.txt
+M       git-cmds/8.revert.txt
+A       git-cmds/9.resolve-conflict.txt
+Переключено на новую ветку «f2»
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git checkout -b f3
+A       git-cmds/10.branch.txt
+M       git-cmds/8.revert.txt
+A       git-cmds/9.resolve-conflict.txt
+Переключено на новую ветку «f3»
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git branch
+  develop
+  f1
+  f2
+* f3
+  master
+  newbranch
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git checkout master
+A       git-cmds/10.branch.txt
+A       git-cmds/11.merge.txt
+A       git-cmds/12-rebase-vs-merge.txt
+M       git-cmds/8.revert.txt
+A       git-cmds/9.resolve-conflict.txt
+Переключено на ветку «master»
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git branch
+  develop
+  f1
+  f2
+  f3
+* master
+  newbranch
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git log
+commit 4a493ce72d16512ef1ccff8ebd644af1429ff24d (HEAD -> master, newbranch, f3, f2, f1, develop)
+Author: Yao Jean-Claude <jeandev84@yahoo.com>
+Date:   Sun Oct 27 01:18:46 2019 +0300
+
+    Revert Wrong commit
+
+commit 929ac73aec87535b1ee139c395faf5a92da8e73b
+Author: Yao Jean-Claude <jeandev84@yahoo.com>
+Date:   Sun Oct 27 00:22:06 2019 +0300
+
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git checkout develop
+A       git-cmds/10.branch.txt
+A       git-cmds/11.merge.txt
+A       git-cmds/12-rebase-vs-merge.txt
+M       git-cmds/8.revert.txt
+A       git-cmds/9.resolve-conflict.txt
+Переключено на ветку «develop»
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git status
+На ветке develop
+Изменения, которые будут включены в коммит:
+  (используйте «git reset HEAD <файл>…», чтобы убрать из индекса)
+
+        новый файл:    git-cmds/10.branch.txt
+        новый файл:    git-cmds/11.merge.txt
+        новый файл:    git-cmds/12-rebase-vs-merge.txt
+        новый файл:    git-cmds/13.clone.txt
+        изменено:      git-cmds/8.revert.txt
+        новый файл:    git-cmds/9.resolve-conflict.txt
+
+Изменения, которые не в индексе для коммита:
+  (используйте «git add <файл>…», чтобы добавить файл в индекс)
+  (используйте «git checkout -- <файл>…», чтобы отменить изменения
+   в рабочем каталоге)
+
+        изменено:      git-cmds/10.branch.txt
+        изменено:      git-cmds/11.merge.txt
+        изменено:      git-cmds/12-rebase-vs-merge.txt
+        изменено:      git-cmds/13.clone.txt
+        изменено:      git-cmds/9.resolve-conflict.txt
+
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git add .
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git status
+На ветке develop
+Изменения, которые будут включены в коммит:
+  (используйте «git reset HEAD <файл>…», чтобы убрать из индекса)
+
+        новый файл:    git-cmds/10.branch.txt
+        новый файл:    git-cmds/11.merge.txt
+        новый файл:    git-cmds/12-rebase-vs-merge.txt
+        новый файл:    git-cmds/13.clone.txt
+        изменено:      git-cmds/8.revert.txt
+        новый файл:    git-cmds/9.resolve-conflict.txt
+
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git status
+На ветке develop
+Изменения, которые будут включены в коммит:
+  (используйте «git reset HEAD <файл>…», чтобы убрать из индекса)
+
+        новый файл:    git-cmds/10.branch.txt
+        новый файл:    git-cmds/11.merge.txt
+        новый файл:    git-cmds/12-rebase-vs-merge.txt
+        новый файл:    git-cmds/13.clone.txt
+        изменено:      git-cmds/8.revert.txt
+        новый файл:    git-cmds/9.resolve-conflict.txt
+
+Изменения, которые не в индексе для коммита:
+  (используйте «git add <файл>…», чтобы добавить файл в индекс)
+  (используйте «git checkout -- <файл>…», чтобы отменить изменения
+   в рабочем каталоге)
+
+        изменено:      git-cmds/13.clone.txt
+
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git add .
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git commit -m "clone project from distance repository"
+[develop 9241082] clone project from distance repository
+ 6 files changed, 236 insertions(+)
+ create mode 100644 git-cmds/10.branch.txt
+ create mode 100644 git-cmds/11.merge.txt
+ create mode 100644 git-cmds/12-rebase-vs-merge.txt
+ create mode 100644 git-cmds/13.clone.txt
+ create mode 100644 git-cmds/9.resolve-conflict.txt
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git remote add origin git@github.com:jeandev84/git-advanced.git
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git push -u origin master
+The authenticity of host 'github.com (140.82.118.3)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no)? y
+Please type 'yes' or 'no': y
+Please type 'yes' or 'no': yes
+Warning: Permanently added 'github.com,140.82.118.3' (RSA) to the list of known hosts.
+git@github.com: Permission denied (publickey).
+fatal: Не удалось прочитать из внешнего репозитория.
+
+Удостоверьтесь, что у вас есть необходимые права доступа
+и репозиторий существует.
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git push -u origin master
+git@github.com: Permission denied (publickey).
+fatal: Не удалось прочитать из внешнего репозитория.
+
+Удостоверьтесь, что у вас есть необходимые права доступа
+и репозиторий существует.
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git push origin master
+git@github.com: Permission denied (publickey).
+fatal: Не удалось прочитать из внешнего репозитория.
+
+Удостоверьтесь, что у вас есть необходимые права доступа
+и репозиторий существует.
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git remote add origin https://github.com/jeandev84/git-advanced.git
+fatal: внешний репозиторий origin уже существует
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git remote -v
+origin  git@github.com:jeandev84/git-advanced.git (fetch)
+origin  git@github.com:jeandev84/git-advanced.git (push)
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git remote set-url https://github.com/jeandev84/git-advanced.git
+использование: git remote set-url [--push] <имя> <новый-url> [<старый-url>]
+   или: git remote set-url --add <имя> <новый-url>
+   или: git remote set-url --delete <имя> <url>
+
+    --push                управление URL отправки
+    --add                 добавить URL
+    --delete              удалить URL
+
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git remote set-url --delete git@github.com:jeandev84/git-advanced.git
+использование: git remote set-url [--push] <имя> <новый-url> [<старый-url>]
+   или: git remote set-url --add <имя> <новый-url>
+   или: git remote set-url --delete <имя> <url>
+
+    --push                управление URL отправки
+    --add                 добавить URL
+    --delete              удалить URL
+
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git remote set-url git@github.com:jeandev84/git-advanced.git https://github.com/jeandev84/git-advanced.git
+fatal: Нет такого внешнего репозитория «git@github.com:jeandev84/git-advanced.git»
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git remote set-url https://github.com/jeandev84/git-advanced.git
+использование: git remote set-url [--push] <имя> <новый-url> [<старый-url>]
+   или: git remote set-url --add <имя> <новый-url>
+   или: git remote set-url --delete <имя> <url>
+
+    --push                управление URL отправки
+    --add                 добавить URL
+    --delete              удалить URL
+
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git remote set-url --add https://github.com/jeandev84/git-advanced.git
+использование: git remote set-url [--push] <имя> <новый-url> [<старый-url>]
+   или: git remote set-url --add <имя> <новый-url>
+   или: git remote set-url --delete <имя> <url>
+
+    --push                управление URL отправки
+    --add                 добавить URL
+    --delete              удалить URL
+
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git remote set-url origin --add https://github.com/jeandev84/git-advanced.git
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git remote
+origin
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git remote -v
+origin  git@github.com:jeandev84/git-advanced.git (fetch)
+origin  git@github.com:jeandev84/git-advanced.git (push)
+origin  https://github.com/jeandev84/git-advanced.git (push)
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git remote set-url origin --delete git@github.com:jeandev84/git-advanced.git
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git remote -v
+origin  https://github.com/jeandev84/git-advanced.git (fetch)
+origin  https://github.com/jeandev84/git-advanced.git (push)
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git push
+fatal: Текущая ветка develop не имеет вышестоящей ветки.
+Чтобы отправить текущую ветку и установить внешнюю ветку как вышестоящую для этой ветки, используйте
+
+    git push --set-upstream origin develop
+
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git push --set-upstream origin develop
+Username for 'https://github.com': jeandev84
+Password for 'https://jeandev84@github.com':
+Перечисление объектов: 56, готово.
+Подсчет объектов: 100% (56/56), готово.
+При сжатии изменений используется до 4 потоков
+Сжатие объектов: 100% (44/44), готово.
+Запись объектов: 100% (56/56), 9.06 KiB | 2.27 MiB/s, готово.
+Всего 56 (изменения 10), повторно использовано 0 (изменения 0)
+remote: Resolving deltas: 100% (10/10), done.
+To https://github.com/jeandev84/git-advanced.git
+ * [new branch]      develop -> develop
+Ветка «develop» отслеживает внешнюю ветку «develop» из «origin».
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git status
+На ветке develop
+Ваша ветка обновлена в соответствии с «origin/develop».
+
+Изменения, которые не в индексе для коммита:
+  (используйте «git add <файл>…», чтобы добавить файл в индекс)
+  (используйте «git checkout -- <файл>…», чтобы отменить изменения
+   в рабочем каталоге)
+
+        изменено:      git-cmds/13.clone.txt
+
+нет изменений добавленных для коммита
+(используйте «git add» и/или «git commit -a»)
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git status
+На ветке develop
+Ваша ветка обновлена в соответствии с «origin/develop».
+
+Изменения, которые будут включены в коммит:
+  (используйте «git reset HEAD <файл>…», чтобы убрать из индекса)
+
+        новый файл:    git-cmds/14.push.txt
+
+Изменения, которые не в индексе для коммита:
+  (используйте «git add <файл>…», чтобы добавить файл в индекс)
+  (используйте «git checkout -- <файл>…», чтобы отменить изменения
+   в рабочем каталоге)
+
+        изменено:      git-cmds/13.clone.txt
+        изменено:      git-cmds/14.push.txt
+
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git add .
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git commit --
+Отмена коммита из-за пустого сообщения коммита.
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git commit
+Отмена коммита из-за пустого сообщения коммита.
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git commit -""
+error: pathspec '-' did not match any file(s) known to git
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git commit -m ""
+Отмена коммита из-за пустого сообщения коммита.
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git commit -m "Add doc file clone"
+[develop e38d56c] Add doc file clone
+ 2 files changed, 26 insertions(+), 2 deletions(-)
+ create mode 100644 git-cmds/14.push.txt
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git push
+Username for 'https://github.com': jeandev84
+Password for 'https://jeandev84@github.com':
+Перечисление объектов: 8, готово.
+Подсчет объектов: 100% (8/8), готово.
+При сжатии изменений используется до 4 потоков
+Сжатие объектов: 100% (4/4), готово.
+Запись объектов: 100% (5/5), 800 bytes | 800.00 KiB/s, готово.
+Всего 5 (изменения 3), повторно использовано 0 (изменения 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/jeandev84/git-advanced.git
+   9241082..e38d56c  develop -> develop
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git branch
+* develop
+  f1
+  f2
+  f3
+  master
+  newbranch
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git pull origin develop
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Распаковка объектов: 100% (3/3), готово.
+Из https://github.com/jeandev84/git-advanced
+ * branch            develop    -> FETCH_HEAD
+   e38d56c..3a0cbaf  develop    -> origin/develop
+Обновление e38d56c..3a0cbaf
+Fast-forward
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git remote
+origin
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git remote -v
+origin  https://github.com/jeandev84/git-advanced.git (fetch)
+origin  https://github.com/jeandev84/git-advanced.git (push)
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git status
+На ветке develop
+Ваша ветка обновлена в соответствии с «origin/develop».
+
+Изменения, которые будут включены в коммит:
+  (используйте «git reset HEAD <файл>…», чтобы убрать из индекса)
+
+        новый файл:    git-cmds/15.pull.txt
+        новый файл:    git-cmds/15.stash.txt
+
+Изменения, которые не в индексе для коммита:
+  (используйте «git add <файл>…», чтобы добавить файл в индекс)
+  (используйте «git checkout -- <файл>…», чтобы отменить изменения
+   в рабочем каталоге)
+
+        изменено:      git-cmds/14.push.txt
+        изменено:      git-cmds/15.pull.txt
+        изменено:      git-cmds/15.stash.txt
+
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git add .
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git commit -m "Stash and important commands"
+[develop 04631d1] Stash and important commands
+ 3 files changed, 99 insertions(+), 1 deletion(-)
+ create mode 100644 git-cmds/15.pull.txt
+ create mode 100644 git-cmds/15.stash.txt
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git push origin master
+Username for 'https://github.com': jeandev84
+Password for 'https://jeandev84@github.com':
+Всего 0 (изменения 0), повторно использовано 0 (изменения 0)
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/jeandev84/git-advanced/pull/new/master
+remote:
+To https://github.com/jeandev84/git-advanced.git
+ * [new branch]      master -> master
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$ git status
+На ветке develop
+Ваша ветка опережает «origin/develop» на 1 коммит.
+  (используйте «git push», чтобы опубликовать ваши локальные коммиты)
+
+нечего коммитить, нет изменений в рабочем каталоге
+jeandev@jeandev-Lenovo-G580:/var/www/git-advanced$
